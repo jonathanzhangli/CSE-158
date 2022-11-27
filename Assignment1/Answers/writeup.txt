@@ -1,0 +1,10 @@
+Jonathan Li
+
+
+Read Prediction Approach:
+
+	I created a similarity function that uses Jaccard similarity to compare how similar a user's books are to other users who read the same book. If this similarity score was above the mean of all similarity scores and the book was one of the most popular books, the model would label this prediction as 1 (yes this user did read this book) and 0 otherwise.
+
+Category Prediction
+
+	I found the 10000 most popular words across all the ratings and their respective counts. I then created a dictionary that mapped the genre to a number. Using logistic regression, I was able to create a model that associated the count of words with a certain genre, which resulted in the generated predictions.
